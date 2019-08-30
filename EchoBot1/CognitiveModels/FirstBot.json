@@ -1,0 +1,125 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "FirstBot",
+  "desc": "For Education",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "booking"
+    },
+    {
+      "name": "cancel"
+    },
+    {
+      "name": "greeting"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "meeting room",
+      "subLists": [
+        {
+          "canonicalForm": "meeting room 1",
+          "list": [
+            "ห้อง 1",
+            "room 1",
+            "meet room 1",
+            "first room"
+          ]
+        },
+        {
+          "canonicalForm": "meeting room 2",
+          "list": [
+            "ห้อง 2",
+            "meet room 2",
+            "room 2"
+          ]
+        },
+        {
+          "canonicalForm": "meeting room 3",
+          "list": [
+            "ห้อง 3",
+            "room 3",
+            "meet room 3"
+          ]
+        },
+        {
+          "canonicalForm": "meeting room 4",
+          "list": []
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "book first room",
+      "intent": "booking",
+      "entities": []
+    },
+    {
+      "text": "booking a meeting room 1",
+      "intent": "booking",
+      "entities": []
+    },
+    {
+      "text": "booking meet room 2",
+      "intent": "booking",
+      "entities": []
+    },
+    {
+      "text": "good afternoon",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "greeting",
+      "entities": []
+    },
+    {
+      "text": "i want to book a meeting room 3",
+      "intent": "booking",
+      "entities": []
+    },
+    {
+      "text": "i want to cancel a booking room",
+      "intent": "cancel",
+      "entities": []
+    },
+    {
+      "text": "จองห้อง 1",
+      "intent": "booking",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
